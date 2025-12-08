@@ -7,4 +7,4 @@ When modifying linker this:
     `KEEP(*Loader_Src.o(.text))`
     `KEEP(*Loader_Src.o(.text*))`
     
-can be used instead of `KEEP`ing namely all needed fuctions.
+can be used instead of `KEEP`ing namely all needed fuctions (just possible improvement -- here not applied/possible TODO).
