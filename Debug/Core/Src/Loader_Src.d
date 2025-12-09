@@ -1,4 +1,6 @@
 Core/Src/Loader_Src.o: ../Core/Src/Loader_Src.c ../Core/Inc/Loader_Src.h \
+ ../Core/Inc/stm32h573i_discovery_ospi.h \
+ ../Core/Inc/stm32h573i_discovery_conf.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h \
  ../Core/Inc/stm32h5xx_hal_conf.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc.h \
@@ -22,8 +24,16 @@ Core/Src/Loader_Src.o: ../Core/Src/Loader_Src.c ../Core/Inc/Loader_Src.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_flash_ex.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr_ex.h \
- ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_exti.h
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_xspi.h \
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_dlyb.h \
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_uart.h \
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_uart_ex.h \
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_exti.h \
+ ../Core/Inc/stm32h573i_discovery_errno.h ../Core/Inc/mx25lm51245g.h \
+ ../Core/Inc/mx25lm51245g_conf.h
 ../Core/Inc/Loader_Src.h:
+../Core/Inc/stm32h573i_discovery_ospi.h:
+../Core/Inc/stm32h573i_discovery_conf.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h:
 ../Core/Inc/stm32h5xx_hal_conf.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc.h:
@@ -47,4 +57,11 @@ Core/Src/Loader_Src.o: ../Core/Src/Loader_Src.c ../Core/Inc/Loader_Src.h \
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_flash_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_pwr_ex.h:
+../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_xspi.h:
+../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_ll_dlyb.h:
+../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_uart.h:
+../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_uart_ex.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_exti.h:
+../Core/Inc/stm32h573i_discovery_errno.h:
+../Core/Inc/mx25lm51245g.h:
+../Core/Inc/mx25lm51245g_conf.h:

@@ -60,8 +60,8 @@ all: main-build
 main-build: h5-loader.elf secondary-outputs
 
 # Tool invocations
-h5-loader.elf h5-loader.map: $(OBJS) $(USER_OBJS) C:\Users\novaksta\STM32CubeIDE\workspace_1.19.0\h56-dummy-loader.zip_expanded\h5-loader\linker.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "h5-loader.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"C:\Users\novaksta\STM32CubeIDE\workspace_1.19.0\h56-dummy-loader.zip_expanded\h5-loader\linker.ld" --specs=nosys.specs -Wl,-Map="h5-loader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+h5-loader.elf h5-loader.map: $(OBJS) $(USER_OBJS) C:\Users\novaksta\STM32CubeIDE\workspace_2.0.0\h56-dummy-loader.zip_expanded\h5-loader\linker.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "h5-loader.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"C:\Users\novaksta\STM32CubeIDE\workspace_2.0.0\h56-dummy-loader.zip_expanded\h5-loader\linker.ld" --specs=nosys.specs -Wl,-Map="h5-loader.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

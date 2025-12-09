@@ -7,6 +7,8 @@
 C_SRCS += \
 ../Core/Src/Dev_Inf.c \
 ../Core/Src/Loader_Src.c \
+../Core/Src/mx25lm51245g.c \
+../Core/Src/stm32h573i_discovery_ospi.c \
 ../Core/Src/stm32h5xx_hal_msp.c \
 ../Core/Src/stm32h5xx_it.c \
 ../Core/Src/syscalls.c \
@@ -16,6 +18,8 @@ C_SRCS += \
 OBJS += \
 ./Core/Src/Dev_Inf.o \
 ./Core/Src/Loader_Src.o \
+./Core/Src/mx25lm51245g.o \
+./Core/Src/stm32h573i_discovery_ospi.o \
 ./Core/Src/stm32h5xx_hal_msp.o \
 ./Core/Src/stm32h5xx_it.o \
 ./Core/Src/syscalls.o \
@@ -25,6 +29,8 @@ OBJS += \
 C_DEPS += \
 ./Core/Src/Dev_Inf.d \
 ./Core/Src/Loader_Src.d \
+./Core/Src/mx25lm51245g.d \
+./Core/Src/stm32h573i_discovery_ospi.d \
 ./Core/Src/stm32h5xx_hal_msp.d \
 ./Core/Src/stm32h5xx_it.d \
 ./Core/Src/syscalls.d \
@@ -39,7 +45,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/Dev_Inf.cyclo ./Core/Src/Dev_Inf.d ./Core/Src/Dev_Inf.o ./Core/Src/Dev_Inf.su ./Core/Src/Loader_Src.cyclo ./Core/Src/Loader_Src.d ./Core/Src/Loader_Src.o ./Core/Src/Loader_Src.su ./Core/Src/stm32h5xx_hal_msp.cyclo ./Core/Src/stm32h5xx_hal_msp.d ./Core/Src/stm32h5xx_hal_msp.o ./Core/Src/stm32h5xx_hal_msp.su ./Core/Src/stm32h5xx_it.cyclo ./Core/Src/stm32h5xx_it.d ./Core/Src/stm32h5xx_it.o ./Core/Src/stm32h5xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h5xx.cyclo ./Core/Src/system_stm32h5xx.d ./Core/Src/system_stm32h5xx.o ./Core/Src/system_stm32h5xx.su
+	-$(RM) ./Core/Src/Dev_Inf.cyclo ./Core/Src/Dev_Inf.d ./Core/Src/Dev_Inf.o ./Core/Src/Dev_Inf.su ./Core/Src/Loader_Src.cyclo ./Core/Src/Loader_Src.d ./Core/Src/Loader_Src.o ./Core/Src/Loader_Src.su ./Core/Src/mx25lm51245g.cyclo ./Core/Src/mx25lm51245g.d ./Core/Src/mx25lm51245g.o ./Core/Src/mx25lm51245g.su ./Core/Src/stm32h573i_discovery_ospi.cyclo ./Core/Src/stm32h573i_discovery_ospi.d ./Core/Src/stm32h573i_discovery_ospi.o ./Core/Src/stm32h573i_discovery_ospi.su ./Core/Src/stm32h5xx_hal_msp.cyclo ./Core/Src/stm32h5xx_hal_msp.d ./Core/Src/stm32h5xx_hal_msp.o ./Core/Src/stm32h5xx_hal_msp.su ./Core/Src/stm32h5xx_it.cyclo ./Core/Src/stm32h5xx_it.d ./Core/Src/stm32h5xx_it.o ./Core/Src/stm32h5xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32h5xx.cyclo ./Core/Src/system_stm32h5xx.d ./Core/Src/system_stm32h5xx.o ./Core/Src/system_stm32h5xx.su
 
 .PHONY: clean-Core-2f-Src
 
